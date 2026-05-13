@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahmad Chaudhary — AI Chatbot & Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">AC<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/923033557356" target="_blank" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Work</a>
+      <a href="#contact">Contact</a>
+      <a href="https://wa.me/923033557356" target="_blank" class="mob-cta">Hire Me</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Available for Freelance
+      </div>
+      <h1 class="hero-title reveal-up delay-1">
+        <span class="line">Ahmad</span>
+        <span class="line">Chaudhary<span class="accent">.</span></span>
+      </h1>
+      <p class="hero-sub reveal-up delay-2">
+        AI Chatbot Developer &nbsp;·&nbsp; WordPress Expert &nbsp;·&nbsp; Full-Stack Builder
+      </p>
+      <p class="hero-desc reveal-up delay-3">
+        I craft intelligent web experiences — from custom AI chatbots that qualify leads 24/7, 
+        to high-performance WordPress sites that convert. Based in Lahore, working globally.
+      </p>
+      <div class="hero-actions reveal-up delay-4">
+        <a href="#portfolio" class="btn-primary">View My Work</a>
+        <a href="https://wa.me/923033557356" target="_blank" class="btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Me
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right delay-2">
+      <div class="hero-card">
+        <div class="hcard-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-initials">AC</div>
+        </div>
+        <div class="hcard-stats">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">40+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Satisfaction</span>
+          </div>
+        </div>
+        <div class="hcard-tags">
+          <span>WordPress</span>
+          <span>AI Chatbot</span>
+          <span>n8n</span>
+          <span>PHP</span>
+          <span>Groq API</span>
+        </div>
+        <div class="hcard-status">
+          <span class="pulse-dot"></span>
+          Open to work
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ MARQUEE ═══════════════════════════════ -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>AI Chatbots</span><span class="sep">✦</span>
+      <span>WordPress Development</span><span class="sep">✦</span>
+      <span>Custom Software</span><span class="sep">✦</span>
+      <span>Lead Generation</span><span class="sep">✦</span>
+      <span>API Integration</span><span class="sep">✦</span>
+      <span>Automation</span><span class="sep">✦</span>
+      <span>AI Chatbots</span><span class="sep">✦</span>
+      <span>WordPress Development</span><span class="sep">✦</span>
+      <span>Custom Software</span><span class="sep">✦</span>
+      <span>Lead Generation</span><span class="sep">✦</span>
+      <span>API Integration</span><span class="sep">✦</span>
+      <span>Automation</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-label reveal-left">About Me</div>
+          <h2 class="section-title reveal-left delay-1">
+            Building the future<br>of web, one line<br>at a time<span class="accent">.</span>
+          </h2>
+          <div class="about-img-wrap reveal-left delay-2">
+            <div class="about-img-placeholder">
+              <div class="about-initials-big">AC</div>
+              <div class="about-img-tag">Ahmad Chaudhary</div>
+            </div>
+            <div class="about-badge-float">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              AI Expert
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="about-lead reveal-up delay-2">
+            I'm Ahmad Chaudhary — a BS Software Engineering graduate and passionate developer from Lahore, Pakistan. I specialize in AI chatbot development and WordPress, turning complex problems into elegant digital solutions.
+          </p>
+          <p class="about-body reveal-up delay-3">
+            Currently working at <strong>Brand Bonjour</strong>, I've built everything from AI-powered lead capture systems to full custom web platforms. My expertise spans the full stack — from designing the UI to wiring up AI models like LLaMA and GPT via APIs, deploying on cloud infrastructure, and automating workflows with n8n.
+          </p>
+          <div class="skills-grid reveal-up delay-4">
+            <div class="skill-item">
+              <div class="skill-icon">⚙️</div>
+              <span>WordPress & PHP</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🤖</div>
+              <span>AI Chatbot Dev</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🔗</div>
+              <span>API Integration</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">⚡</div>
+              <span>n8n Automation</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🌐</div>
+              <span>Custom Web Apps</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">📱</div>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+          <div class="about-cta reveal-up delay-5">
+            <a href="#contact" class="btn-primary">Let's Talk</a>
+            <div class="location-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Lahore, Pakistan · US Timezone
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SERVICES ═══════════════════════════════ -->
+  <section class="services section-pad" id="services">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <div class="section-label">What I Do</div>
+        <h2 class="section-title">Services<span class="accent">.</span></h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal-up delay-1" data-num="01">
+          <div class="service-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3>AI Chatbot Development</h3>
+          <p>Custom intelligent chatbots that qualify leads, answer FAQs, and book appointments — 24/7 without human intervention. Integrated with LLaMA, GPT, Groq APIs and more.</p>
+          <div class="service-tags"><span>Groq</span><span>LLaMA</span><span>GPT API</span></div>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal-up delay-2" data-num="02">
+          <div class="service-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <h3>WordPress Development</h3>
+          <p>High-performance WordPress websites — custom themes, WooCommerce stores, IDX real estate integrations, and complex plugin development tailored to your needs.</p>
+          <div class="service-tags"><span>WordPress</span><span>WooCommerce</span><span>Elementor</span></div>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal-up delay-3" data-num="03">
+          <div class="service-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Custom Web Development</h3>
+          <p>Bespoke web applications built from scratch. Whether it's a SaaS product, a booking system, or a complex business tool — I architect and deliver scalable solutions.</p>
+          <div class="service-tags"><span>PHP</span><span>JS</span><span>MySQL</span></div>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal-up delay-4" data-num="04">
+          <div class="service-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3>Automation & n8n Workflows</h3>
+          <p>Save hours daily with intelligent automation pipelines. I connect your CRM, email, WhatsApp, and AI tools into seamless workflows using n8n and Zapier.</p>
+          <div class="service-tags"><span>n8n</span><span>Zapier</span><span>Make</span></div>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal-up delay-5" data-num="05">
+          <div class="service-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3>Real Estate Tech Solutions</h3>
+          <p>Specialized tools for real estate agencies — IDX integration, lead capture chatbots, property listing systems, and automated follow-up workflows.</p>
+          <div class="service-tags"><span>IDX</span><span>Lead Capture</span><span>CRM</span></div>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal-up delay-6" data-num="06">
+          <div class="service-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h3>API & Third-Party Integrations</h3>
+          <p>Seamlessly connect your apps with payment gateways, SMS providers, WhatsApp Business API, Google services, and any third-party platform via REST APIs.</p>
+          <div class="service-tags"><span>REST API</span><span>WhatsApp API</span><span>Stripe</span></div>
+          <div class="service-arrow">→</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PORTFOLIO ═══════════════════════════════ -->
+  <section class="portfolio section-pad" id="portfolio">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <div class="section-label">Selected Work</div>
+        <h2 class="section-title">Portfolio<span class="accent">.</span></h2>
+      </div>
+
+      <!-- Horizontal scroll portfolio -->
+      <div class="portfolio-scroll-outer reveal-up delay-1">
+        <div class="portfolio-scroll-track" id="portfolioTrack">
+
+          <div class="pcard">
+            <div class="pcard-img pcard-img-1">
+              <div class="pcard-overlay">
+                <div class="pcard-num">01</div>
+              </div>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-category">AI Chatbot</div>
+              <h3>Real Estate Lead Chatbot</h3>
+              <p>AI-powered chatbot for real estate agencies built with Groq API & LLaMA 3.3 70B. Captures leads, qualifies buyers, and books viewings automatically.</p>
+              <div class="pcard-tags"><span>Groq API</span><span>LLaMA 3.3</span><span>JavaScript</span></div>
+            </div>
+          </div>
+
+          <div class="pcard">
+            <div class="pcard-img pcard-img-2">
+              <div class="pcard-overlay">
+                <div class="pcard-num">02</div>
+              </div>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-category">WordPress</div>
+              <h3>Real Estate by Leela — IDX Site</h3>
+              <p>Full-featured real estate website with IDX integration, MLS property listings, advanced search filters, and custom lead capture forms.</p>
+              <div class="pcard-tags"><span>WordPress</span><span>IDX</span><span>MLS</span></div>
+            </div>
+          </div>
+
+          <div class="pcard">
+            <div class="pcard-img pcard-img-3">
+              <div class="pcard-overlay">
+                <div class="pcard-num">03</div>
+              </div>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-category">Automation</div>
+              <h3>WhatsApp n8n Outreach System</h3>
+              <p>End-to-end automated outreach pipeline connecting WhatsApp Business API with CRM using n8n workflows. Automated follow-ups, lead tracking, and reporting.</p>
+              <div class="pcard-tags"><span>n8n</span><span>WhatsApp API</span><span>CRM</span></div>
+            </div>
+          </div>
+
+          <div class="pcard">
+            <div class="pcard-img pcard-img-4">
+              <div class="pcard-overlay">
+                <div class="pcard-num">04</div>
+              </div>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-category">Web App</div>
+              <h3>Brand Bonjour Client Portal</h3>
+              <p>Custom internal portal for managing client projects, proposals, and documents. Built with PHP, MySQL, and modern frontend stack.</p>
+              <div class="pcard-tags"><span>PHP</span><span>MySQL</span><span>JS</span></div>
+            </div>
+          </div>
+
+          <div class="pcard">
+            <div class="pcard-img pcard-img-5">
+              <div class="pcard-overlay">
+                <div class="pcard-num">05</div>
+              </div>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-category">AI Tool</div>
+              <h3>AI Listing Description Generator</h3>
+              <p>SaaS-style tool for realtors to generate compelling property listing descriptions using AI. Reduces copywriting time from hours to seconds.</p>
+              <div class="pcard-tags"><span>OpenAI</span><span>PHP</span><span>WordPress</span></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="portfolio-drag-hint">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Drag to explore
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROCESS ═══════════════════════════════ -->
+  <section class="process section-pad">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <div class="section-label">How I Work</div>
+        <h2 class="section-title">My Process<span class="accent">.</span></h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal-up delay-1">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Discovery</h3>
+            <p>We discuss your goals, requirements, and challenges. I ask the right questions to understand exactly what you need.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up delay-2">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Planning</h3>
+            <p>I create a clear roadmap — tech stack, timeline, milestones. No surprises, just clarity before a single line of code is written.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up delay-3">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Development</h3>
+            <p>I build your solution with clean, maintainable code. You get regular updates so you always know where we stand.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up delay-4">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>Launch & Support</h3>
+            <p>Thorough testing, deployment, and handover. I stick around post-launch to ensure everything runs perfectly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ TESTIMONIALS ═══════════════════════════════ -->
+  <section class="testimonials section-pad">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <div class="section-label">Client Words</div>
+        <h2 class="section-title">What They Say<span class="accent">.</span></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal-up delay-1">
+          <div class="testi-quote">"</div>
+          <p>Ahmad delivered exactly what we needed — a smart chatbot that now handles 70% of our initial client inquiries. Our team's productivity skyrocketed.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SK</div>
+            <div>
+              <strong>Sana Khan</strong>
+              <span>Real Estate Agency, Lahore</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal-up delay-2">
+          <div class="testi-quote">"</div>
+          <p>Outstanding WordPress developer. He rebuilt our entire site with IDX integration in two weeks — clean code, fast loading, and zero issues after launch.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MR</div>
+            <div>
+              <strong>Mike Reynolds</strong>
+              <span>Realtor, USA</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal-up delay-3">
+          <div class="testi-quote">"</div>
+          <p>The n8n automation system Ahmad set up saves us 3 hours every day. Our WhatsApp follow-ups are now fully automated and response rates jumped by 40%.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AR</div>
+            <div>
+              <strong>Ahmed Raza</strong>
+              <span>Business Owner, Lahore</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left reveal-left">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Let's Build<br>Something<br>Great<span class="accent">.</span></h2>
+          <p>Have a project in mind? Want to integrate AI into your business? Let's chat — I'm always open to discussing new ideas and opportunities.</p>
+          <div class="contact-methods">
+            <a href="https://wa.me/923033557356" target="_blank" class="contact-method">
+              <div class="cm-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <span>WhatsApp</span>
+                <strong>+92 303 355 7356</strong>
+              </div>
+            </a>
+            <a href="mailto:ahmad29chaudhary@gmail.com" class="contact-method">
+              <div class="cm-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span>Email</span>
+                <strong>ahmad29chaudhary@gmail.com</strong>
+              </div>
+            </a>
+            <div class="contact-method no-link">
+              <div class="cm-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span>Location</span>
+                <strong>Lahore, Pakistan · US Hours</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right reveal-right delay-2">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Project Type</label>
+              <select>
+                <option value="">Select a service...</option>
+                <option>AI Chatbot Development</option>
+                <option>WordPress Development</option>
+                <option>Custom Web Application</option>
+                <option>Automation / n8n</option>
+                <option>Real Estate Tech</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Tell Me About Your Project</label>
+              <textarea rows="5" placeholder="Describe what you need..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">
+              Send Message
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form-note">Or reach me directly on WhatsApp for a faster reply.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">AC<span>.</span></div>
+        <p class="footer-copy">© 2025 Ahmad Chaudhary. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/923033557356" target="_blank" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="mailto:ahmad29chaudhary@gmail.com" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
